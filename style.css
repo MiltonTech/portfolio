@@ -1,0 +1,189 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* navbar section */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 133, 168);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 40px;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: rgb(2, 2, 48);
+    text-shadow: 2px 4px 6px lightgray;
+}
+/* Home Section*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(165, 191, 200, 0.092);
+    height: 850px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(24, 24, 140);
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://cdn.wallpapersafari.com/44/86/lFm8KM.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 100%;
+    z-index: -1;
+     /*opacity: .8;  */
+}
+.main{
+    border: 1px solid white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+}
+.heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+.btn{
+    padding: 10px 30px;
+    background-color: transparent;
+    transition: .6s;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(205, 224, 241);
+    box-shadow: 0 0 5px rgb(255, 255, 255),0 0 10px rgb(255, 255, 255),0 0 15px rgb(250, 247, 247);
+}
+
+/* About */
+#about{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 500px;
+    height: 400px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+#intro h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* project */
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(136, 167, 236);
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery img{
+    width: 360px;
+    height: 250px;
+    margin: 10px;
+}
+.gallery img:hover{
+    width: 380px;
+    transition: .6s;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    border-radius: 50px;
+}
+/* Services */
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgb(13, 81, 104);
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 15px;
+
+    background: linear-gradient(to top,rgb(56, 90, 141) 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px blue;
+}
+.box img{
+    width: 250px;
+    height: 250px;
+}
+
+/* contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(45, 76, 187);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    padding: 10px;
+    margin: 5px;
+}
+#send{
+    padding: 10px;
+    margin: 5px;
+}
+#send:hover{
+    background-color: rgb(11, 41, 72);
+    color: bisque;
+}
